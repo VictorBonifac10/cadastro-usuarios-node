@@ -87,12 +87,3 @@ app.delete('/usuarios/:id', async (req, res) => { //RouteParams
 
 
 app.listen(3001)// a variavel app será ovida pela porta 3000
-
-/*
-
-mongoDB
-
-user: victoralvesbonifacio
-senha: 21zQec7rkvnldfOH
-
-*/

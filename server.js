@@ -3,6 +3,7 @@
 
 //acessar (novo)
 import express from 'express';
+import cors from 'cors'
 import { PrismaClient } from './generated/prisma/index.js'
 
 const prisma = new PrismaClient()
@@ -10,6 +11,7 @@ const prisma = new PrismaClient()
 
 const app = express() // guadando o express dento de app
 app.use(express.json()) // necessario para o post funcionar
+app.use(cors()) //(aqui vai o endereço do front-end)
 
 //------------------------------------------------------------------
 //rota get

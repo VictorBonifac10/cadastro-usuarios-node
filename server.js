@@ -9,7 +9,7 @@ import { PrismaClient } from './generated/prisma/index.js'
 const prisma = new PrismaClient()
 // use `prisma` in your application to read and write data in your DB
 
-const app = express() // guadando o express dento de app
+const app = express() // guadando o express dentro de app
 app.use(express.json()) // necessario para o post funcionar
 app.use(cors()) //(aqui vai o endereço do front-end)
 
@@ -88,4 +88,4 @@ app.delete('/usuarios/:id', async (req, res) => { //RouteParams
 //------------------------------------------------------------------
 
 
-app.listen(3001)// a variavel app será ovida pela porta 3000
+app.listen(3001)// a variavel app será ouvida pela porta 3001
